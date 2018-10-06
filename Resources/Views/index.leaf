@@ -1,0 +1,10 @@
+#set("content") {
+
+<img src="/images/Logo_sm.png" class="mx-auto d-block" alt="Contenta logo" />
+
+<h1>Contenta</h1>
+
+<h2>Welcome to Contenta!</h2>
+
+}
+#embed("base")

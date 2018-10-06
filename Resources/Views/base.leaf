@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="<?php echo Config::Web('public/img/Logo_favicon.png'); ?>" />
+    <link rel="stylesheet" href="/styles/contenta.css">
+
+    <title>#(title) | Contenta</title>
+</head>
+<body>
+    <div class="container mt-3">
+        #get(content)
+    </div>
+
+<!-- footer area -->
+<footer>
+<div id="colophon" class="clearfix">
+    <div class="grid_6 left">
+        <a target="ContentWeb" href="https://github.com/vitolibrarius/contentavapor">Contenta Website</a> |
+        <a target="ContentWiki" href="https://github.com/vitolibrarius/contenta/wiki">HelpLink</a> |
+        <a target="ContentIssues" href="https://github.com/vitolibrarius/contentavapor/issues/new?body='Problem on page'">AddIssueLink</a>
+    </div>
+    <div class="grid_6 right">Release: 0.0.0</div>
+</div>
+</footer>
+<!-- #end footer area -->
+
+</body>
+</html>
