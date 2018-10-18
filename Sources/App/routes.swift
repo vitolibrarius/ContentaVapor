@@ -4,19 +4,12 @@ import Fluent
 import ContentaUserModel
 
 /// Register your application's routes here.
-public func routes<D: QuerySupporting>(_ router: Router, database: D) throws {
+public func routes<D: JoinSupporting>(_ router: Router, database: D) throws {
 
     typealias Database = D
     
     router.get("hello") { req in
         return "Hello, world!"
-    }
-
-    router.get("users") { req -> Future<View> in
-        return User<Database>.query(on: req).all().flatMap { users in
-            let data = ["userlist": users]
-            return try req.view().render("userview", data)
-        }
     }
 
     let usersController = UserController<Database>()

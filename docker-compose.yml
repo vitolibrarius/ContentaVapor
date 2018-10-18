@@ -1,10 +1,10 @@
 version: "3.3"
 services:
-  api:
+  contenta:
     build:
       context: .
       dockerfile: Dockerfile-dev
-    image: api:dev
+    image: contenta:dev
     environment:
       MYSQL_HOST: db
       MYSQL_USER: test
@@ -13,8 +13,8 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - .:/app
-    working_dir: /app
+      - .:/contenta
+    working_dir: /contenta
     stdin_open: true
     tty: true
     entrypoint: bash
